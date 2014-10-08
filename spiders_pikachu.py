@@ -1,7 +1,7 @@
-import urllib2,urllib
+import urllib2
+import urllib
 import re
 
- 
 def spiders():
     image_number = 0
     
@@ -20,10 +20,8 @@ def spiders():
             urllib.urlretrieve(image_url,'picture_%s.jpg' %image_number) # download the teledata
             print "Download %s images" %image_number
             image_number += 1
-            
+
     print "END"
-    
     
 if __name__ == "__main__":
     spiders()
-
